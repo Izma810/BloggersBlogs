@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    border: black;
+    border-width: 100mm;
+    margin:0mm;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:100;
+    letter-spacing: 0.5mm;
+}
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  .topnav a.active {
+    background-color: white;
+    color:black;
+            
+}
+#image1{
+    border:white;
+    border-width: 100mm;
+}
+.container{
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%
+    
+
+}
+.container span{
+    text-transform: uppercase;
+    display: block;
+}
+.text1{
+    color:white;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background:black;
+    position:relative;
+    animation: text 3s 1;
+
+
+}
+.text2{
+    font-size:30px;
+    color:turquoise;
+    font-family: sans-serif;
+
+}
+@keyframes text{
+    0%{
+        color:back;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+}
+#particles-js{
+    height: 100%;
+
+}
+.content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+
+}
+.content h2{
+    position:absolute;
+    color:white;
+    transform: translate(-50%,-50%);
+    font-size:7em;
+    font-family:sans-serif;
+    font-weight:700;
+    right:25%;
+
+
+}
+.content h2:nth-child(1){
+    color:transparent;
+    -webkit-text-stroke: 2px rgb(12, 128, 236);
+
+}
+.content h2:nth-child(2){
+    color:pink;
+    animation: animate 4s ease-in-out infinite;
+
+}
+@keyframes animate{
+    0%,100%
+    {
+        clip-path: polygon(1% 60%, 12% 53%, 31% 52%, 40% 61%, 53% 68%, 64% 55%, 78% 45%, 
+        89% 41%, 100% 53%, 100% 99%, 1% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(1% 60%, 10% 65%, 24% 66%, 40% 55%, 53% 48%, 66% 44%, 81% 51%, 
+        90% 60%, 100% 70%, 100% 99%, 1% 100%);
+    }
+}
+.abt{
+    position:relative;
+    width: 1200px;
+    height:300px;
+    margin:240px auto;
+    
+
+
+}
+.abt .box{
+    position:relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background:white;
+    float:left;
+    margin:15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.abt .box .icon{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background:cyan;
+    transition: 0.5s;
+    z-index: 1;
+}
+.abt .box:hover .icon{
+    top:20px;
+    left: calc(50% - 40px);
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+
+}
+.abt .box .icon .fa{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: black;
+}
+.abt .box:hover .icon .fa{
+    font-size:40px;
+}
+.abt .box .pencil{
+    position: absolute;
+    top: 100%;
+    height:calc(100% - 100px);
+    text-align:center;
+    padding: 20px;
+    box-sizing: border-box;
+    color:black;
+    transition: 0.5s;
+    opacity:0;
+}
+.abt .box:hover .pencil{
+    top:100px;
+    opacity:1;
+}
+.abt .box:nth-child(1) .icon{
+    background:#FE1D65;
+}
+.abt .box:nth-child(1){
+    background:#FD7DC1;
+}
+.abt .box:nth-child(2) .icon{
+    background:#0396FC;
+}
+.abt .box:nth-child(2){
+    background:#03FCDE;
+}
+.abt .box:nth-child(3) .icon{
+    background:#7003FC;
+}
+.abt .box:nth-child(3){
+    background:#9F6AE4;
+}
