@@ -86,8 +86,9 @@ html{
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     position: relative;
+    margin-top:40vh;
+
 
 }
 .content h2{
@@ -127,7 +128,8 @@ html{
     position:relative;
     width: 1200px;
     height:300px;
-    margin:240px auto;
+    margin-left:15vh;
+    margin-top:10vh;
     
 
 
@@ -138,7 +140,7 @@ html{
     height: calc(300px - 30px);
     background:white;
     float:left;
-    margin:15px;
+    margin:10px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
@@ -207,3 +209,4 @@ html{
 .abt .box:nth-child(3){
     background:#9F6AE4;
 }
+
