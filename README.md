@@ -1,7 +1,7 @@
 # BloggersBlogs
-:) :(
-Idk why there's no link to the website
-I would suggest you to download the code and see for yourself
-Hope you like my website! :D
-However, it's not complete yet 😅
-My website's not responsive, sorry!
+✌✌✌
+Go check out the website here 👇👇👇
+https://izma810.github.io/BloggersBlogs/Index.html
+It isn't responsive 😅
+But check it out anyways 😄😄😄
+Thank you 😎
