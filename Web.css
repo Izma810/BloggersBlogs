@@ -255,7 +255,7 @@ html {
   top: 0;
   left: 0;
   /* width: 100%; */
-  height: 30%;
+  /* height: 30%; */
   color: #f9ae00;
   -webkit-text-stroke: 0vw white;
   border-right: 2px solid #f9ae00;
@@ -273,6 +273,13 @@ html {
     width: 100%;
   }
 }
+
+.no:link,
+.no:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .yup {
   width: 100%;
   box-sizing: border-box;
@@ -295,6 +302,7 @@ html {
   transition: 0.5s;
 }
 .contain .bet:hover {
+  cursor: pointer;
   z-index: 1;
   transform: scale(1.25);
   box-shadow: 0 25px 40px #1b2631;
@@ -374,18 +382,13 @@ html {
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   /* align-items: center; */
 }
 
-.but1 {
-  display: inline;
-  justify-content: center;
-  align-items: center;
+.no {
   background: #000;
-  position: relative;
-  padding: 10px 30px;
-  margin: 0 15px;
   color: cyan;
   text-decoration: none;
   text-transform: uppercase;
@@ -394,42 +397,41 @@ html {
   transition: 0.5s;
   font-family: sans-serif;
   font-weight: 700;
-  margin-left: 100px;
   overflow: hidden;
 }
-.but1 :nth-child(1) {
+.no :nth-child(1) {
   filter: hue-rotate(115deg);
 }
-.but1 :nth-child(2) {
+.no :nth-child(2) {
   filter: hue-rotate(270deg);
 }
-.but1 :nth-child(2) {
+.no :nth-child(2) {
   filter: hue-rotate(180deg);
 }
-.but1:hover {
+.no:hover {
   background: cyan;
   color: #111;
   box-shadow: 0 0 50px cyan;
-  transition-delay: 0.5s;
+  /* transition-delay: 0.5s; */
 }
-.but1:before {
+.no:before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0;
   width: 10px;
-  height: 10px;
+  height: 10px; */
   border-top: 2px solid cyan;
   border-left: 2px solid cyan;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+  transition: 0.2s;
+  /* transition-delay: 0.5s; */
 }
-.but1:hover:before {
-  width: 99%;
-  height: 97%;
+.no:hover:before {
+  /* width: 99%;
+  height: 97%; */
   transition-delay: 0s;
 }
-.but1:after {
+.no:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -438,12 +440,12 @@ html {
   height: 10px;
   border-bottom: 2px solid cyan;
   border-right: 2px solid cyan;
-  transition: 0.5s;
-  transition-delay: 0.5s;
+  transition: 0.2s;
+  /* transition-delay: s; */
 }
-.but1:hover:after {
-  width: 99%;
-  height: 96%;
+.no:hover:after {
+  /* width: 99%;
+  height: 96%; */
   transition-delay: 0s;
 }
 .wap {
@@ -490,7 +492,7 @@ html {
   min-height: 100vh;
   margin-top: 15%;
   margin-left: 25%;
-  margin-right: 25%;
+  /* margin-right: 25%; */
   width: 50%;
   padding: 20px;
 }
@@ -666,6 +668,7 @@ ul li:hover::before {
     text-align: center;
     font-size: 3em;
     margin-left: 50px;
+    min-height: 36vh;
   }
   .contain .imgbx {
     margin: 40px;
