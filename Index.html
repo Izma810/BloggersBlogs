@@ -1,10 +1,13 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <title>
             BloggersBlogs
         </title>
         <link rel="stylesheet" type="text/css" href="Web.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
      </head>
     <body style="color:white;
@@ -26,12 +29,13 @@
 
         </div>
         <hr width="100%" color="white" id="About">
+        <div class="abut">
         <div class="content" >
             <h2>About</h2>
             <h2>About</h2>
         </div>
         <div class="abt">
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <div class="icon"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
                 <div class="pencil">
                     <h3>Ideas</h3>
@@ -41,7 +45,7 @@
                     </p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
                 <div class="pencil">
                     <h3>Research</h3>
@@ -51,7 +55,7 @@
                     </p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                 <div class="pencil">
                     <h3>Share</h3>
@@ -61,6 +65,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <br>
         <br>
         <br>
@@ -69,9 +74,10 @@
         <hr width="100%" color="white" id="Blogs">
         <h2 class="animated-text" data-text="Blogs" >Blogs</h2>
         </div>
+    <div class="yup">
     <div class="contain">
         <div class="bet">
-            <div class="imgbx">
+            <div class="imgbx" data-aos="fade-in">
                 <img src="pexels-photo-1570099.jpeg">
             </div>
             <div class="con">
@@ -86,7 +92,7 @@
             </div>
         </div>
         <div class="bet">
-            <div class="imgbx">
+            <div class="imgbx" data-aos="fade-in">
                 <img src="pexels-photo-1770809.jpeg">
             </div>
             <div class="con">
@@ -101,7 +107,7 @@
             </div>
         </div>
         <div class="bet">
-            <div class="imgbx">
+            <div class="imgbx" data-aos="fade-in">
                 <img src="pexels-photo-2478248.jpeg">
             </div>
             <div class="con">
@@ -116,7 +122,7 @@
             </div>
         </div>
         <div class="bet">
-            <div class="imgbx">
+            <div class="imgbx" data-aos="fade-in">
                 <img src="pexels-photo-844297.jpeg">
             </div>
             <div class="con">
@@ -130,6 +136,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="but1"><span>Read More</span></a>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="but1"><span>Read More</span></a>
@@ -209,5 +216,9 @@
     <div class="last">
        <p class="lline">Made with <i class="fa fa-heart" aria-hidden="true"></i> by Izma</p>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
